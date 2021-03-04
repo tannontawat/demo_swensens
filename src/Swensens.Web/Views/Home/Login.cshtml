@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container">
+    <div class="pt-3">
+        <div class="row d-flex justify-content-center mb-2">
+            <div class="col-md-6 col-sm-12 text-center text-red">
+                <h3>เข้าสู่ระบบ</h3>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mb-2">
+            <div class="col-md-6 col-sm-12">
+                <input type="text" class="form-control " placeholder="อีเมล หรือชื่อผู้ใช้" />
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mb-2">
+            <div class="col-md-6 col-sm-12">
+                <input type="password" class="form-control " placeholder="รหัสผ่าน" />
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <button class="btn btn-block bg-red text-white">เข้าสู่ระบบด้วยอีเมล</button>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mb-2">
+            <div class="col-md-6 col-sm-12 text-center divided">
+                <span>หรือ</span>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mb-2">
+            <div class="col-md-6 col-sm-12">
+                <button class="btn btn-block text-white" style="background-color: #203b79;">เข้าสู่ระบบด้วย Facebook</button>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mb-2">
+            <div class="col-md-6 col-sm-12 text-center">
+                หากคุณยังไม่ได้เป็นสมาชิกคลิกเลย > <a href="#" class="link">สมัครสมาชิกใหม่</a><br/>
+                <a href="#" class="link">แจ้งลืมรหัสผ่าน ?</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles
+{
+    <style>
+        .divided {
+            /*color: #a1a1a1;*/
+            line-height: 1;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .link {
+            color: #d20718 !important;
+        }
+
+            .link:hover {
+                color: #d20718 !important;
+                text-decoration: none;
+            }
+    </style>
+}

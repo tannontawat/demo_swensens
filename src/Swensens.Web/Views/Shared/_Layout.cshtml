@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Swensens</title>
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" asp-append-version="true">
+    <link href="~/lib/fontAwesome/css/font-awesome.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/style.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    <div class="fixed-top">
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 d-flex justify-content-center align-items-center banner-side">
+                        <a class="btn bg-red text-white" style="height: 40px;">เรื่องราวของสเวนเซ่นส์</a>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                        <a asp-controller="Home" asp-action="Index">
+                            <img src="https://www.swensens1112.com/images/logo.png" class="nav-img">
+                        </a>
+                    </div>
+                    <div class="col-3 d-flex justify-content-center align-items-center banner-side">
+                        <a asp-controller="Home" asp-action="Login" class="btn bg-red text-white" style="height: 40px;">เข้าสู่ระบบ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-red">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto" id="menu-items">
+                        <li class="">
+                            <a href="https://www.swensens1112.com/th/product/cake" class="" lang="th">ไอศกรีมเค้ก</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.swensens1112.com/th/product/icecream" class="" lang="th">ไอศกรีมควอท (450g.)</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.swensens1112.com/th/product/ice-cream-pint" class="" lang="th">ไอศกรีมมินิ ควอท (250g.)</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.swensens1112.com/th/product/sundae-set" class="" lang="th">ซันเด เซต</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.swensens1112.com/th/product/scoop" class="" lang="th">ไอศกรีมสกู๊ป</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.swensens1112.com/th/product/Topping" class="" lang="th">ท้อปปิ้ง</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.swensens1112.com/th/product/icecream-bar" class="" lang="th">ไอศกรีมบาร์</a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.swensens1112.com/th/product/Vouchers" class="" lang="th">บัตรกำนัลเงินสด</a>
+                        </li>
+                        <li class="card " style="background-color: #b78009; padding-right: 7px; ">
+                            <a href="https://www.swensens1112.com/th/swensens-card" lang="th"><img src="https://www.swensens1112.com/icon/swensens_menu_member_card_40x40.png" class="icon_nav">สมาชิกสเวนเซ่นส์การ์ด</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main role="main" style="min-height: 1300px; margin-top: 159px;">
+        @RenderBody()
+    </main>
+
+
+    <footer>
+        <div class="footer-top" style="height: 50px;">
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-4 d-flex justify-content-center">
+                        <img src="~/asset/icon/creditCard/visa.svg" class="cc-icon" />
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <img src="~/asset/icon/creditCard/mastercard.svg" class="cc-icon" />
+                    </div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <img src="~/asset/icon/creditCard/jcb.svg" class="cc-icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-buttom">
+            <div class="container">
+                <div class="row py-3" style="display: revert;">
+                    <div class="col-md-6 col-sm-12 float-md-right text-md-right">
+                        <div class="row">
+                            <div class="col-7">
+                                ติดต่อเรา
+                            </div>
+                            <div class="col-5">
+                                ติดตามเรา
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                จัดส่งสินค้าเวลา 10:00 น. - 21:00 น. รับออเดอร์สุดท้ายเวลา 20:00 น.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row footer-link">
+                            <div class="col-3">
+                                <a href="https://www.swensens1112.com/th/about-us" class="">เกี่ยวกับเรา</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="https://www.swensens1112.com/th/faq" class="">คำถามที่พบบ่อย</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="https://www.swensens1112.com/th/terms-and-conditions" class="">ข้อตกลงและเงื่อนไข</a>
+                            </div>
+                            <div class="col-3">
+                                <a href="https://www.swensens1112.com/th/privacy-policy" class="">นโยบายความเป็นส่วนตัว</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                COPYRIGHT © 2018 SWENSEN'S THAILAND. ALL RIGHTS RESERVED.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/jquery.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/jquery.metisMenu.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/jquery.slimscroll.min.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/bootstrap.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
